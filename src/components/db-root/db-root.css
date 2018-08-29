@@ -1,0 +1,70 @@
+.db-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.fancy-text {
+  margin: 0.5em 0;
+  /* font-family: "Helvetica Neue", sans-serif; */
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 6em;
+  /* color: #22313f; */
+  color: #ffffff;
+  text-align: center;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.03em;
+  text-shadow: -0.02em 0 0 #f22613, 0.02em 0 0 #00ffff;
+}
+
+.sub-text {
+  animation: colorPulse 2s infinite ease-in-out;
+  font-family: "Fira Mono", monospace;
+  font-size: 2em;
+}
+
+p:last-child:after {
+  animation: blink 1s infinite;
+  content: "_";
+}
+
+/* @keyframes colorPulse {
+  0%,
+  100% {
+    color: #22313f;
+  }
+  48%,
+  52% {
+    color: #8b2d24;
+  }
+  50% {
+    color: #ffffff;
+  }
+} */
+@keyframes colorPulse {
+  0%,
+  100% {
+    color: #ffffff;
+  }
+  25% {
+    color: #ffffff;
+  }
+  27% {
+    color: #00ffff;
+  }
+  29% {
+    color: #f22613;
+  }
+  30% {
+    color: #ffffff;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
