@@ -30,10 +30,14 @@ export class Root {
       <div class="db-root">
         <div class="fancy-text">Dillon Bhola</div>
 
+        <div class="project-link" onClick={()=> window.open("https://shubhdaanfoundation.netlify.com/", "_blank")}>
+          <p>view work in progress</p>
+          <i class="material-icons icon first-icon">work</i>
+          <i class="material-icons icon second-icon">launch</i>
+        </div>
+
         <div class="sub-text">
-          <p>
-            more coming soon.
-          </p>
+          <p>more coming soon.</p>
         </div>
       </div>
     );
